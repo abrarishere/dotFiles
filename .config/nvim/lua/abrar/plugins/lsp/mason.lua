@@ -31,11 +31,14 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
-        "graphql",
         "emmet_ls",
-        "prismals",
         "pyright",
+        "somesass_ls",
+        "jsonls",
+        "yamlls",
+        "emmet_language_server",
+        "grammarly",
+        "eslint",
       },
     })
 
