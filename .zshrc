@@ -110,6 +110,9 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+alias jn='jupyter notebook'
+alias jn-root='jupyter notebook --allow-root'
+alias jn-r='jupyter-notebook --allow-root --NotebookApp.token='''
 alias vim="nvim"
 alias n="nvim"
 alias q='quit'
