@@ -1,5 +1,5 @@
 return {
-  "dasupradyumna/midnight.nvim",
+  "marko-cerovac/material.nvim",
   priority = 1000,
   config = function()
     local bg = "#011628"
@@ -11,6 +11,8 @@ return {
     local fg_dark = "#B4D0E9"
     local fg_gutter = "#627E97"
     local border = "#547998"
+
+
 
     -- require("tokyonight").setup({
     --   style = "night",
@@ -38,6 +40,7 @@ return {
     --   end
     -- })
 
-    vim.cmd("colorscheme midnight")
+    vim.g.material_style = "deep ocean"
+    vim.cmd("colorscheme material")
   end
 }
