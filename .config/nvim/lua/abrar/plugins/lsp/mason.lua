@@ -33,6 +33,7 @@ return {
         "tailwindcss",
         "emmet_ls",
         "pyright",
+        "jedi_language_server",
         "somesass_ls",
         "jsonls",
         "yamlls",

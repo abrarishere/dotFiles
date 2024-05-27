@@ -34,6 +34,7 @@ return {
         "markdown",
         "markdown_inline",
         "svelte",
+        "python",
         "graphql",
         "bash",
         "lua",
