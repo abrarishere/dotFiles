@@ -1,18 +1,20 @@
 return {
   -- "marko-cerovac/material.nvim",
-  'sekke276/dark_flat.nvim',
+  'folke/tokyonight.nvim',
   priority = 1000,
   config = function()
 
 
 
-     require("dark_flat").setup({
-    --   style = "night",
+     require("tokyonight").setup({
+      style = "storm",
        transparent = true,
-    -- styles = {
-    --    sidebars = "transparent",
-    --    floats = "transparent",
-    -- },
+    styles = {
+       sidebars = "transparent",
+    -- I am using false in italics as my font causes problems
+       comments = { italic = false },
+       floats = "transparent",
+    },
     --   on_colors = function(colors)
     --     colors.bg = bg
     --     colors.bg_dark = bg_dark
@@ -31,8 +33,7 @@ return {
     --     colors.fg_sidebar = fg_dark
     --   end
      })
-
     -- vim.g.material_style = "deep ocean"
-    vim.cmd("colorscheme dark_flat")
+    vim.cmd("colorscheme tokyonight")
   end
 }

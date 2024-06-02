@@ -11,7 +11,7 @@ opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
-opt.wrap = true
+opt.wrap =  true 
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -39,12 +39,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 
-
-
 vim.diagnostic.config({
-  underline = true,
   virtual_text = false,
   virtual_lines = false,
-  signs = true,
-  update_in_insert = false,
 })
