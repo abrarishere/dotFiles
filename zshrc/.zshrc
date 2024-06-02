@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="minimal"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git web-search )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,10 +110,9 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias jn='jupyter notebook'
-alias jn-root='jupyter notebook --allow-root'
-alias jn-r='jupyter-notebook --allow-root --NotebookApp.token='''
-alias vim="nvim"
+alias del='rm -rf' 
+alias n_d='mkdir'
+alias n_f='touch'
 alias n="nvim"
 alias q='quit'
 alias c='clear'
@@ -123,7 +122,22 @@ alias upgrade='apt upgrade'
 alias install='apt install'
 alias nc='cd ~/.config/nvim/'
 alias zc='n ~/.zshrc'
+alias abrar='cd .. & cd usr/var/lib/proot-distro/installed-rootfs/ubuntu-oldlts/home/abrar'
 alias live="live-server"
+alias cDot="git clone https://github.com/abrarishere/dotFiles"
+alias cWeb="git clone https://github.com/abrarishere/frontendOnAndroid"
+
+# ---- App Development ----
+# export ANDROID_HOME="$PREFIX/opt/Android/sdk"
+
+# export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+#
+# export JAVA_HOME=/data/data/com.termux/files/usr/opt/openjdk
+#
+# export "PATH=$PATH:$PREFIX/opt/gradle/bin"
+
+
+
 # ---- FZF -----
 
 # Set up fzf key bindings and fuzzy completion
@@ -136,6 +150,9 @@ bg_highlight="#143652"
 purple="#B388FF"
 blue="#06BCE4"
 cyan="#2CF9ED"
+
+
+
 
 export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
@@ -189,3 +206,7 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 eval "$(zoxide init zsh)"
 
 alias cd="z"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
