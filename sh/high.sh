@@ -7,16 +7,16 @@ apt update -y && apt upgrade -y
 apt install gh -y
 
 # Install Gradle
-apt install gradle -y
+ apt install gradle -y
 
 # Install Build Essential
-apt install build-essential -y
+ apt install build-essential -y
 
 # Install Zsh
 apt install zsh -y
 
 # Install Ruby
-apt install ruby -y
+ apt install ruby -y
 
 # Install tur-repo
 apt install tur-repo -y
@@ -25,23 +25,23 @@ apt install tur-repo -y
 apt install bat -y
 
 # Install tmux
-apt install tmux -y
+ apt install tmux -y
 
 # Install zoxide
 apt install zoxide -y
 
 # Install zellij
-apt install zellij -y
+ apt install zellij -y
 
 # Set Git configurations
-git config --global user.name "abc"
-git config --global user.email "abc@example.com"
+git config --global user.name "abrarishere"
+git config --global user.email "abc@gmail.com"
 
 # Update and upgrade
 apt update -y && apt upgrade -y
 
 # Install Node.js packages
-npm install -g live-server sass tldr
+ npm install -g live-server sass tldr
 
 # Update and upgrade
 apt update -y && apt upgrade -y
