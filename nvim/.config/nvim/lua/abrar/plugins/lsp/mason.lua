@@ -37,9 +37,8 @@ return {
         "somesass_ls",
         "jsonls",
         "yamlls",
-        "emmet_language_server",
         "grammarly",
-        "eslint",
+        'quick_lint_js',
       },
     })
 
@@ -50,7 +49,7 @@ return {
         "black", -- python formatter
         "pylint",
         "biome",
-        "eslint_d",
+        'quick_lint_js',
       },
     })
   end,

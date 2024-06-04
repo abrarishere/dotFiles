@@ -1,12 +1,17 @@
 return {
   "anuvyklack/windows.nvim",
+    event = "WinNew",
   requires = {
     "anuvyklack/middleclass",
     "anuvyklack/animation.nvim"
   },
+  opts = {
+      animation = { enable = true, duration = 50, fps = 60 },
+      autowidth = { enable = true },
+  },
   config = function()
-    vim.o.winwidth = 10
-    vim.o.winminwidth = 10
+    vim.o.winwidth = 5
+    vim.o.winminwidth = 5
     vim.o.equalalways = false
     require('windows').setup()
 
