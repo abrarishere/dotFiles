@@ -38,7 +38,7 @@ return {
         "jsonls",
         "yamlls",
         "grammarly",
-        'quick_lint_js',
+        'eslint',
       },
     })
 
@@ -49,7 +49,10 @@ return {
         "black", -- python formatter
         "pylint",
         "biome",
-        'quick_lint_js',
+        'eslint_d',
+        'google-java-format',
+        'markdownlint',
+        'mdformat',
       },
     })
   end,
