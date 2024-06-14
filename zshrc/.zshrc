@@ -111,8 +111,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias del='rm -rf' 
-alias n_d='mkdir'
-alias n_f='touch'
 alias n="nvim"
 alias q='quit'
 alias c='clear'
@@ -207,3 +205,6 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 
+
+
+export RISH_APPLICATION_ID='com.termux'
