@@ -33,7 +33,6 @@ return {
         "tailwindcss",
         "emmet_ls",
         "pyright",
-        "jedi_language_server",
         "jsonls",
         "grammarly",
         'eslint',

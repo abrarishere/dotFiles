@@ -10,6 +10,12 @@ keymap.set("x", "<leader>wq", ":norm! @", { desc = "Press macro to apply on sele
 
 keymap.set("n", "n", "nzzzv", { desc = "Move to next search result and center" }) -- move to next search result and center
 keymap.set("n", "N", "Nzzzv", { desc = "Move to previous search result and center" }) -- move to previous search result and center
+keymap.set("n", "J", "mzJ`z", { desc = "Join lines without moving cursor" }) -- join lines without moving cursor
+keymap.set("n", "Y", "y$", { desc = "Yank to end of line" }) -- yank to end of line
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down half page and center" }) -- scroll down half page and center
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up half page and center" }) -- scroll up half page and center
+
+keymap.set("n", ".", "@@", { desc = "Repeat last command" }) -- repeat last command
 
 
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste over selected text without copying it" }) -- paste over selected text
