@@ -19,6 +19,7 @@ keymap.set("n", ".", "@@", { desc = "Repeat last command" }) -- repeat last comm
 
 
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste over selected text without copying it" }) -- paste over selected text
+keymap.set("x", "<leader>d", "_d", { desc = "Delete without copying to clipboard" }) -- delete without copying to clipboard
 
 
 

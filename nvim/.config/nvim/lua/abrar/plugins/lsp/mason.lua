@@ -31,11 +31,13 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "emmet_ls",
+        -- "emmet_language_server",
+        "jsonls",
         "pyright",
         "jsonls",
         "grammarly",
         'eslint',
+        'intelephense',
       },
     })
 
@@ -50,6 +52,7 @@ return {
         'google-java-format',
         'markdownlint',
         'mdformat',
+        'easy-coding-standard',
       },
     })
   end,
