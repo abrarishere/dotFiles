@@ -38,6 +38,7 @@ return {
         "grammarly",
         'eslint',
         'intelephense',
+        'stimulus_ls',
       },
     })
 
@@ -52,7 +53,8 @@ return {
         'google-java-format',
         'markdownlint',
         'mdformat',
-        'easy-coding-standard',
+        'php-cs-fixer',
+        'phpstan',
       },
     })
   end,
