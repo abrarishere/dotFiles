@@ -47,7 +47,7 @@ return {
         "prettier", -- prettier formatter
         "isort", -- python formatter
         "black", -- python formatter
-        "pylint",
+        "pylint", -- python linter
         "biome",
         'eslint_d',
         'google-java-format',
