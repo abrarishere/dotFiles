@@ -54,7 +54,7 @@ return {
         'markdownlint',
         'mdformat',
         'php-cs-fixer',
-        'phpstan',
+        'phpcs',
       },
     })
   end,
