@@ -77,7 +77,7 @@ ZSH_THEME="minimal"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search )
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,6 +124,20 @@ alias abrar='cd .. & cd usr/var/lib/proot-distro/installed-rootfs/ubuntu-oldlts/
 alias live="live-server"
 alias cDot="git clone https://github.com/abrarishere/dotFiles"
 alias cWeb="git clone https://github.com/abrarishere/frontendOnAndroid"
+
+
+# Set the NDK home directory
+export NDK_HOME=/data/data/com.termux/files/home/ndk/android-ndk-r26b
+export PATH=$NDK_HOME/toolchains/llvm/prebuilt/linux-aarch64/bin:$PATH
+# export ANDROID_NDK_HOME=~/ndk/android-ndk-r26d
+
+# Add the NDK toolchain to the PATH
+# export PATH=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
+
+# Set the CC and AR environment variables for the aarch64 target
+# export CC_aarch64_linux_android=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-clang
+# export AR_aarch64_linux_android=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ar
+
 
 # ---- App Development ----
 # export ANDROID_HOME="$PREFIX/opt/Android/sdk"
@@ -208,3 +222,7 @@ alias cd="z"
 
 
 export RISH_APPLICATION_ID='com.termux'
+
+# ---- Starship ---- 
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
