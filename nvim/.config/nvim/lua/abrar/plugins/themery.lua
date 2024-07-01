@@ -5,9 +5,58 @@ return {
   
   config = function()
     require("themery").setup({
-      themes = { 'tokyonight', 'material', 'night-owl', 'sonokai', 'everforest', 'gruvbox-material', 'edge', 'gruvbox', 'lackluster' ,'catppuccin' },
+      themes = {{
+        name = 'tokyonight',
+        colorscheme='tokyonight',
+      },
+      {
+          name = 'material',
+          colorscheme='material',
+      },
+      {
+          name = 'night-owl',
+          colorscheme='night-owl',
+          before = function()
+            local night_owl = require('night-owl')
+            night_owl.setup({
+                bold = true,
+                italics = false,
+                underline = true,
+                undercurl = true,
+                transparent_background = true,
+            })
+            end
+      },
+      {
+          name = 'sonokai',
+          colorscheme='sonokai',
+      },
+      {
+          name = 'everforest',
+          colorscheme='everforest',
+      },
+      {
+          name = 'gruvbox',
+          colorscheme='gruvbox-material',
+      },
+      {
+          name = 'edge',
+          colorscheme='edge',
+      },
+      {
+          name = 'gruvbox',
+          colorscheme='gruvbox',
+      },
+      {
+          name = 'lackluster',
+          colorscheme='lackluster'
+      },
+      {
+          name = 'catppuccin',
+          colorscheme='catppuccin',
+      }},
       themeConfigFile = "~/.config/nvim/lua/abrar/core/themery.lua",
-      livePreview = true, -- Apply theme while browsing. Default to true.
+      livePreview = true,
     })
   end,
 }

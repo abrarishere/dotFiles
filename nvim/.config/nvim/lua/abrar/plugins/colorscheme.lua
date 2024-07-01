@@ -41,7 +41,7 @@ return {
     --   end
      -- })
       -- vim.g.material_style = "palenight"
-      -- local night_owl = require("night-owl")
+    -- local night_owl = require("night-owl")
 
       -- night_owl.setup({
       --     bold = true,
@@ -49,7 +49,7 @@ return {
       --     underline = true,
       --     undercurl = true,
       --     transparent_background = true,
-      -- })
+      -- }),
       -- require('material').setup({
       --
       --     contrast = {

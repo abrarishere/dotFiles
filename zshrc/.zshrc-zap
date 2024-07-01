@@ -26,6 +26,7 @@ alias abrar='cd .. & cd usr/var/lib/proot-distro/installed-rootfs/ubuntu-oldlts/
 alias live="live-server"
 alias cDot="git clone https://github.com/abrarishere/dotFiles"
 alias cWeb="git clone https://github.com/abrarishere/frontendOnAndroid"
+alias f="$(pay-respects zsh)"
 
 
 # Set the NDK home directory
