@@ -3,12 +3,8 @@ return {
   'folke/tokyonight.nvim',
   'oxfist/night-owl.nvim',
   'catppuccin/nvim',
-  'sainnhe/sonokai',
-  'sainnhe/everforest',
-  'sainnhe/gruvbox-material',
-  'sainnhe/edge',
-  'ellisonleao/gruvbox.nvim',
   'slugbyte/lackluster.nvim',
+  'rose-pine/neovim',
   -- priority = 1000,
   -- config = function()
 
