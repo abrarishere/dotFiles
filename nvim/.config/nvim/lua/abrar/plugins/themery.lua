@@ -8,6 +8,15 @@ return {
       themes = {{
         name = 'tokyonight',
         colorscheme='tokyonight',
+        before = [[
+          local tokyonight = require('tokyonight')
+          tokyonight.setup({
+          style = "moon",
+            styles = {
+              comments = { italic = false},
+              keywords = { italic = false},
+            },
+          })]]
       },
       {
           name = 'material',

@@ -34,9 +34,9 @@ return {
         -- "emmet_language_server",
         "jsonls",
         "pyright",
+        -- 'pylsp',
         "jsonls",
         "grammarly",
-        'eslint',
         'intelephense',
         'stimulus_ls',
       },
@@ -44,17 +44,23 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
+        --LINTER
+        'eslint_d',
+        'eslint',
+        'stylelint',
+        'markdownlint',
+        "pylint", -- python linter
+        -- FORMATTER
         "prettier", -- prettier formatter
         "isort", -- python formatter
         "black", -- python formatter
-        "pylint", -- python linter
         "biome",
-        'eslint_d',
         'google-java-format',
-        'markdownlint',
         'mdformat',
         'php-cs-fixer',
         'phpcs',
+        --DAP
+        'debugpy',
       },
     })
   end,
