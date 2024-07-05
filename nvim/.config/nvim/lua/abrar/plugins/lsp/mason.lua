@@ -50,6 +50,7 @@ return {
         'stylelint',
         'markdownlint',
         "pylint", -- python linter
+        'phpcs', -- php linter
         -- FORMATTER
         "prettier", -- prettier formatter
         "isort", -- python formatter
@@ -58,7 +59,7 @@ return {
         'google-java-format',
         'mdformat',
         'php-cs-fixer',
-        'phpcs',
+        'sqlfluff',
         --DAP
         'debugpy',
       },

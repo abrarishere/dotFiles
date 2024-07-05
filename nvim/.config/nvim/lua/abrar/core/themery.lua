@@ -1,15 +1,15 @@
 
   -- Themery block
 -- This block will be replaced by Themery.
-local tokyonight = require('tokyonight')
-tokyonight.setup({
-style = "moon",
-styles = {
-comments = { italic = false},
-keywords = { italic = false},
-},
+local night_owl = require('night-owl')
+night_owl.setup({
+bold = true,
+italics = false,
+underline = true,
+undercurl = true,
+transparent_background = true,
 })
 
-vim.cmd("colorscheme tokyonight")
-vim.g.theme_id = 1
+vim.cmd("colorscheme night-owl")
+vim.g.theme_id = 3
 -- end themery block

@@ -18,6 +18,7 @@ return {
         markdown = { "prettier", "mdformat", "markdownlint" },
         graphql = { "prettier" },
         liquid = { "prettier" },
+        sql = { "sqlfluff", "sqlformatter" },
         python = { "isort", "black" },
         java = { "google-java-formatter", "trivy" },
       },

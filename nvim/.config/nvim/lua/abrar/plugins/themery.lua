@@ -1,6 +1,7 @@
 return {
   'zaldih/themery.nvim',
   lazy = false,
+  vim.keymap.set({"n", "v"}, "<leader>th", "<Cmd>Themery<CR>"),
   priority = 1000,
   
   config = function()
