@@ -1,15 +1,24 @@
 
   -- Themery block
 -- This block will be replaced by Themery.
-local night_owl = require('night-owl')
-night_owl.setup({
-bold = true,
-italics = false,
-underline = true,
-undercurl = true,
-transparent_background = true,
+local catppuccin = require('catppuccin')
+catppuccin.setup({
+flavour = "mocha",
+transparent_background = false,
+show_end_of_buffer = false,
+term_colors = false,
+styles = {
+comments = { 'bold' },
+conditionals = { 'bold' },
+},
+integrations = {
+cmp = true,
+gitsigns = true,
+nvimtree = true,
+treesitter = true,
+},
 })
 
-vim.cmd("colorscheme night-owl")
-vim.g.theme_id = 3
+vim.cmd("colorscheme catppuccin")
+vim.g.theme_id = 9
 -- end themery block
