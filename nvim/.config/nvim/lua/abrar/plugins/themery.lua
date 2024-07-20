@@ -13,15 +13,33 @@ return {
           local tokyonight = require('tokyonight')
           tokyonight.setup({
           style = "moon",
-            styles = {
-              comments = { italic = false},
-              keywords = { italic = false},
-            },
+          transparent = true,
+          styles = {
+            comments = { italic = false},
+            keywords = { italic = false},
+            floats = "transparent",
+            sidebars = "transparent",
+          },
           })]]
       },
       {
           name = 'material',
           colorscheme='material',
+          before = [[
+            local material = require('material')
+            material.setup({
+                italics = {
+                    comments = false,
+                    keywords = false,
+                    functions = false,
+                    strings = false,
+                    variables = false
+                },
+                disable = {
+                    background = true,
+                    term_colors = true,
+                },
+            })]]
       },
       {
           name = 'night-owl',

@@ -1,24 +1,21 @@
 
   -- Themery block
 -- This block will be replaced by Themery.
-local catppuccin = require('catppuccin')
-catppuccin.setup({
-flavour = "mocha",
-transparent_background = false,
-show_end_of_buffer = false,
-term_colors = false,
-styles = {
-comments = { 'bold' },
-conditionals = { 'bold' },
+local material = require('material')
+material.setup({
+italics = {
+comments = false,
+keywords = false,
+functions = false,
+strings = false,
+variables = false
 },
-integrations = {
-cmp = true,
-gitsigns = true,
-nvimtree = true,
-treesitter = true,
+disable = {
+background = true,
+term_colors = true,
 },
 })
 
-vim.cmd("colorscheme catppuccin")
-vim.g.theme_id = 9
+vim.cmd("colorscheme material")
+vim.g.theme_id = 2
 -- end themery block

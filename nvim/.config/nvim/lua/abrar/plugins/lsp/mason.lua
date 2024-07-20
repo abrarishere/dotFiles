@@ -31,7 +31,7 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        -- "emmet_language_server",
+        "emmet_language_server",
         "jsonls",
         "pyright",
         -- 'pylsp',

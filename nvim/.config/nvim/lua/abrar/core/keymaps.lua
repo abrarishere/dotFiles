@@ -21,6 +21,12 @@ keymap.set("n", ".", "@@", { desc = "Repeat last command" }) -- repeat last comm
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste over selected text without copying it" }) -- paste over selected text
 keymap.set("x", "<leader>d", "_d", { desc = "Delete without copying to clipboard" }) -- delete without copying to clipboard
 
+--Move lines up and down
+keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" }) -- move line down
+keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" }) -- move line up
+-- Move block of lines up and down
+keymap.set("x", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move block of lines down" }) -- move block of lines down
+keymap.set("x", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move block of lines up" }) -- move block of lines up
 
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
