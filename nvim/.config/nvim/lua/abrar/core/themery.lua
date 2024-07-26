@@ -1,21 +1,15 @@
 
   -- Themery block
 -- This block will be replaced by Themery.
-local material = require('material')
-material.setup({
-italics = {
-comments = false,
-keywords = false,
-functions = false,
-strings = false,
-variables = false
-},
-disable = {
-background = true,
-term_colors = true,
-},
+local night_owl = require('night-owl')
+night_owl.setup({
+bold = true,
+italics = false,
+underline = true,
+undercurl = true,
+transparent_background = true,
 })
 
-vim.cmd("colorscheme material")
-vim.g.theme_id = 2
+vim.cmd("colorscheme night-owl")
+vim.g.theme_id = 3
 -- end themery block
