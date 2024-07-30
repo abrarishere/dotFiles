@@ -4,11 +4,13 @@ return{
   config = function()
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
-    -- configure lualine with modified theme
     lualine.setup({
-      -- options = {
-      --   theme = my_lualine_theme,
-      -- },
+      options = {
+        -- theme = 'nightfly',
+        -- theme = 'palenight',
+        theme = 'powerline_dark',
+        -- theme = 'onedark',
+      },
       sections = {
         lualine_x = {
           {
@@ -17,7 +19,7 @@ return{
             color = { fg = "#ff9e64" },
           },
           { "encoding" },
-          { "fileformat" },
+          -- { "fileformat" },
           { "filetype" },
         },
       },
