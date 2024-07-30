@@ -184,7 +184,6 @@ return {
                     },
             })]]
       }},
-      themeConfigFile = "~/.config/nvim/lua/abrar/core/themery.lua",
       livePreview = true,
     })
   end,

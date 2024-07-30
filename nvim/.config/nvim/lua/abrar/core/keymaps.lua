@@ -16,6 +16,7 @@ keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down half page and center" 
 keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up half page and center" }) -- scroll up half page and center
 
 keymap.set("n", ".", "@@", { desc = "Repeat last command" }) -- repeat last command
+keymap.set("x", ".", "@@", { desc = "Repeat last command" }) -- repeat last command in visual mode
 
 
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste over selected text without copying it" }) -- paste over selected text
