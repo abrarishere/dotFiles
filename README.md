@@ -130,7 +130,6 @@ NVIM_APPNAME=abrarishere/dotFiles/nvim/.config/nvim nvim
 ### utility
 
 + [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
-+ [kndndrj/nvim-dbee](https://dotfyle.com/plugins/kndndrj/nvim-dbee)
 ## Language Servers
 
 + cssls
