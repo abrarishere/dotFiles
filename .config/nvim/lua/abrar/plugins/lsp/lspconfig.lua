@@ -3,6 +3,12 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
+    {
+      "ray-x/lsp_signature.nvim",
+      event = "VeryLazy",
+      opts = {},
+      config = function(_, opts) require'lsp_signature'.setup(opts) end
+    },
     { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", opts = {} },
   },
@@ -15,6 +21,9 @@ return {
 
     -- import cmp-nvim-lsp plugin
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
+
+    -- import lsp_signature plugin
+    local lsp_signature = require("lsp_signature")
 
     local keymap = vim.keymap -- for conciseness
 
