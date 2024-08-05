@@ -27,10 +27,6 @@ return {
           colorscheme='gruvbox'
       },
       {
-          name = 'nightshift',
-          colorscheme='nightshift'
-      },
-      {
           name = 'material',
           colorscheme='material',
           before = [[
