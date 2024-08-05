@@ -23,6 +23,10 @@ return {
           })]]
       },
       {
+          name = 'gruvbox',
+          colorscheme='gruvbox',
+        },
+      {
           name = 'material',
           colorscheme='material',
           before = [[
