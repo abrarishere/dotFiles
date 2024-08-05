@@ -8,6 +8,7 @@ return {
   'rose-pine/neovim',
   "szw/vim-maximizer",
   "morhetz/gruvbox",
+  'ThePrimeagen/vim-be-good',
   {
       "rachartier/tiny-inline-diagnostic.nvim",
       event = "VeryLazy",
