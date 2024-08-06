@@ -3,6 +3,7 @@ return {
   event = "InsertEnter",
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer
+    "hrsh7th/cmp-cmdline", -- source for command line
     "hrsh7th/cmp-path", -- source for file system paths
     {
       "L3MON4D3/LuaSnip",
@@ -10,6 +11,12 @@ return {
       version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
       -- install jsregexp (optional!).
       build = "make install_jsregexp",
+    },
+    {
+      'doxnit/cmp-luasnip-choice',
+      opts = {
+        auto_open = true,
+      },
     },
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
     "rafamadriz/friendly-snippets", -- useful snippets
@@ -50,14 +57,23 @@ return {
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
         { name = "nvim_lsp_signature_help" }, -- signature help
+        { name = 'luasnip_choice' },
       }),
 
       -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
-        format = lspkind.cmp_format({
-          maxwidth = 50,
-          ellipsis_char = "...",
-        }),
+        format = function(entry, item)
+          local color_item = require("nvim-highlight-colors").format(entry, { kind = item.kind })
+          item = require("lspkind").cmp_format({
+            maxwidth = 50,
+            ellipsis_char = "...",
+          })(entry, item)
+          if color_item.abbr_hl_group then
+            item.kind_hl_group = color_item.abbr_hl_group
+            item.kind = color_item.abbr
+          end
+          return item
+        end
       },
     })
   end,

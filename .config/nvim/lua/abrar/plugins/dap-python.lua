@@ -18,7 +18,7 @@ local plugins = {
               size = 0.20
             }, {
               id = "watches",
-              size = 0.20 
+              size = 0.20
             } },
           position = "left",
           size = 30
@@ -77,15 +77,15 @@ local plugins = {
   {
     "theHamsta/nvim-dap-virtual-text",
     opts ={
-      enabled = true,                        
-      enabled_commands = true,               
-      highlight_changed_variables = true,    
-      highlight_new_as_changed = false,      
-      show_stop_reason = true,               
-      commented = false,                     
-      only_first_definition = true,          
-      all_references = false,                
-      clear_on_continue = false,             
+      enabled = true,
+      enabled_commands = true,
+      highlight_changed_variables = true,
+      highlight_new_as_changed = false,
+      show_stop_reason = true,
+      commented = false,
+      only_first_definition = true,
+      all_references = false,
+      clear_on_continue = false,
       display_callback = function(variable, buf, stackframe, node, options)
 
         if options.virt_text_pos == 'inline' then
@@ -124,13 +124,7 @@ local plugins = {
     }),
       }
     end,
-    event = 'VeryLazy', -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
-    keys = {
-      -- Keymap to open VenvSelector to pick a venv.
-      { '<leader>vs', '<cmd>VenvSelect<cr>' },
-      -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
-      { '<leader>vc', '<cmd>VenvSelectCached<cr>' },
-    },
+    event = 'VeryLazy',
   }
 }
 return plugins

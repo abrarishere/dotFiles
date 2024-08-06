@@ -1,4 +1,4 @@
-return {
+return{
   "lewis6991/gitsigns.nvim",
   event = { "BufReadPre", "BufNewFile" },
   opts = {
@@ -43,5 +43,5 @@ return {
       -- Text object
       map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Gitsigns select hunk")
     end,
-  },
+  }
 }
