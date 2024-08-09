@@ -11,7 +11,6 @@
 -- 10 toggleterm.nvim that is a plugin to open the terminal in neovim
 -- 11 nvim-surround that is a plugin to surround the text with the given text
 -- 12 nvim-autopairs that is a plugin to add the pairs automatically
--- 13 noice a ui plugin for nvim
 
 
 return{
@@ -218,27 +217,36 @@ return{
     end,
   },
 
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {
-      lsp = {
-        signature = {
-          enabled = false,
-        },
-      },
-    },
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      {
-        "rcarriga/nvim-notify",
-        opts = {
-          background_colour = "#1e222a",
-          -- timeout = 2,
-          render = "compact",
-        },
-      },
-    }
-  },
+  -- {
+  --   "folke/noice.nvim",
+  --   event = "VeryLazy",
+  --   opts = {
+  --     lsp = {
+  --       signature = {
+  --         enabled = false,
+  --       },
+  --     },
+  --   },
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --     {
+  --       "rcarriga/nvim-notify",
+  --       opts = {
+  --         background_colour = "#1e222a",
+  --         -- timeout = 2,
+  --         render = "compact",
+  --       },
+  --       keys = {
+  --         {
+  --           '<leader>dn',
+  --           function()
+  --             require('notify').dismiss({ silent = true, pending = true })
+  --           end,
+  --           desc = 'Dismiss All Notifications',
+  --         },
+  --       },
+  --     },
+  --   }
+  -- },
 
 }
