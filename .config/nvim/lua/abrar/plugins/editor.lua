@@ -216,23 +216,4 @@ return{
       cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
     end,
   },
-
-  {
-    "utilyre/barbecue.nvim",
-    dependencies = {
-      "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons",
-    },
-    name = "barbecue",
-    enabled = true,
-    event = "BufEnter",
-    ---@type barbecue.Config
-    opts = {
-      theme = "catppuccin-frappe",
-      show_navic = false,
-      symbols = {
-        separator = "/",
-      },
-    },
-  },
 }

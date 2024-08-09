@@ -76,9 +76,6 @@ return{
         quit = { "q", "<ESC>" }, -- quit layout
       },
     },
-    symbol_in_winbar = {
-      enable = false,
-    },
     beacon = {
       enable = true,
       frequency = 7,

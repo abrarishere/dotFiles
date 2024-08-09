@@ -84,42 +84,8 @@ return {
             })]]
       },
       {
-          name = 'rose-pine-dawn',
-          colorscheme='rose-pine-dawn',
-          before = [[
-            local rose_pine = require('rose-pine')
-            rose_pine.setup({
-              variant = "dawn",
-              styles = {
-              italic = false,
-              },
-            })]]
-      },
-      {
           name = 'lackluster',
           colorscheme='lackluster'
-      },
-      {
-          name = 'catppuccin-light',
-          colorscheme='catppuccin',
-          before = [[
-            local catppuccin = require('catppuccin')
-            catppuccin.setup({
-                flavour = "latte",
-                transparent_background = false,
-                show_end_of_buffer = false,
-                term_colors = false,
-                styles = {
-                    comments = { 'bold' },
-                    conditionals = { 'bold' },
-                },
-                integrations = {
-                    cmp = true,
-                    gitsigns = true,
-                    nvimtree = true,
-                    treesitter = true,
-                    },
-            })]]
       },
       
       {
@@ -129,28 +95,6 @@ return {
             local catppuccin = require('catppuccin')
             catppuccin.setup({
                 flavour = "mocha",
-                transparent_background = false,
-                show_end_of_buffer = false,
-                term_colors = false,
-                styles = {
-                    comments = { 'bold' },
-                    conditionals = { 'bold' },
-                },
-                integrations = {
-                    cmp = true,
-                    gitsigns = true,
-                    nvimtree = true,
-                    treesitter = true,
-                    },
-            })]]
-      },
-      {
-          name = 'catppuccin-frappe',
-          colorscheme='catppuccin',
-          before = [[
-            local catppuccin = require('catppuccin')
-            catppuccin.setup({
-                flavour = "frappe",
                 transparent_background = false,
                 show_end_of_buffer = false,
                 term_colors = false,

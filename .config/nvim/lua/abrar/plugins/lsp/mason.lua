@@ -62,7 +62,54 @@ return {
         'sqlfluff',
         --DAP
         'debugpy',
+        'ts-standard',
       },
     })
   end,
 }
+
+--Most Used LSP and Tools by me
+
+
+--  autopep8
+--  bash-language-server
+--  biome
+--  black
+--  blade-formatter
+--  clang-format
+--  cmake-language-server
+--  codespell
+--  css-lsp
+--  debugpy
+--  docformatter
+--  emmet-language-server
+--  emmet-ls
+--  eslint-lsp
+--  eslint_d
+--  google-java-format
+--  grammarly-languageserver
+--  html-lsp
+--  intelephense
+--  isort
+--  java-debug-adapter
+--  jdtls
+--  json-lsp
+--  markdownlint
+--  mdformat
+--  php-cs-fixer
+--  phpcs
+--  prettier
+--  prettierd
+--  pylint
+--  pyright
+--  shellcheck
+--  shfmt
+--  sql-formatter
+--  sqlfluff
+--  sqlfmt
+--  stimulus-language-server
+--  stylelint
+--  tailwindcss-language-server
+--  taplo
+--  ts-standard
+--  typescript-language-server

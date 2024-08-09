@@ -38,28 +38,9 @@ return {
         enabled = true,
         level = 0.48,
 
-        excluded = {
-          filetypes = {
-            NvimTree = true,
-          },
-          buftypes = {
-            nofile = true,
-            prompt = true,
-            terminal = true,
-          },
-        },
       },
 
       switcher = true,
-
-      more_themes = {
-
-        -- the key is the name of the theme must be in PascalCase
-        -- the value is the table of colors to be passed to the theme
-        -- with following format in witch.colors.example
-        -- Custom1 = {},
-        -- Custom2 = {},
-      },
     },
   },
 }
